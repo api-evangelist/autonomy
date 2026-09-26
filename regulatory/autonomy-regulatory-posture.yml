@@ -1,0 +1,28 @@
+generated: 2026-09-26
+method: searched
+source:
+  - https://autonomy.com/tos
+  - https://autonomy.com/privacy
+signals:
+  data_subject_request:
+    - http_status: 200
+      fetched: 2026-09-26
+      quote: "your rights"
+    - http_status: 200
+      fetched: 2026-09-26
+      quote: "your choices"
+  data_retention:
+    - http_status: 200
+      fetched: 2026-09-26
+      quote: "retention period"
+    - http_status: 200
+      fetched: 2026-09-26
+      quote: "Data Retention"
+  age_assurance:
+    - http_status: 200
+      fetched: 2026-09-26
+      quote: "Children's Privacy"
+  training_data_summary:
+    - http_status: 200
+      fetched: 2026-09-26
+      quote: "we use your data"

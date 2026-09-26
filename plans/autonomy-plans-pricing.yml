@@ -1,0 +1,28 @@
+generated: '2026-09-26'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://autonomy.com/tesla/model-3/pricing-comparison
+sources:
+- https://autonomy.com/tesla/model-3/pricing-comparison
+- https://autonomy.com/vehicle/tesla/model-3
+name: Autonomy pricing
+audience: consumer
+pricing_basis: per-seat
+plans:
+- name: Tier 1
+  price_text: $600 /mo*
+  price: 600
+  description: $3,000 down to start
+- name: Tier 2
+  price_text: $700 /mo*
+  price: 700
+  description: $1,000 down to start
+- name: Tier 3
+  price_text: $650 /mo*
+  price: 650
+  description: $2,000 down to start
+- name: Tier 4
+  price_text: $600 /mo*
+  price: 600
+  description: $3,000 down to start
+docs: https://autonomy.com/tesla/model-3/pricing-comparison

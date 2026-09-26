@@ -1,23 +1,90 @@
 aid: autonomy
+
 name: Autonomy
-description: 'Autonomy is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://autonomy.com/content/home/og-home.jpg
+
+description: Autonomy provides a month-to-month car subscription service, allowing customers to drive a variety of vehicles without long-term
+  loans or leases. Users select a vehicle, pay a start fee and monthly payment, and can keep, swap, or return the car at any time. The platform
+  emphasizes flexibility, no commitment, and includes an app for managing subscriptions, payments, and vehicle selection across SUVs, trucks,
+  and electric models.
+
 url: https://raw.githubusercontent.com/api-evangelist/autonomy/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
 - Company
-apis: []
+- Mobility
+- Subscription
+- CarSharing
+- Automotive
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/autonomy-plans-pricing.yml
+- type: Hosts
+  url: hosts/autonomy-hosts.yml
+- type: Vendors
+  url: vendors/autonomy-vendors.yml
+- type: StatusPage
+  url: https://autonomy.com/status
+- type: Pricing
+  url: https://autonomy.com/tesla/model-3/pricing-comparison
+- type: Newsroom
+  url: https://autonomy.com/press
+- type: ChangeLog
+  url: https://autonomy.com/changelog
+- type: DomainSecurity
+  url: security/autonomy-domain-security.yml
 - type: Website
-  url: https://augment.market/c/autonomy
+  url: https://autonomy.com
+- type: Documentation
+  url: https://autonomy.com/about-us
+- type: Support
+  url: https://autonomy.com/contact-us
+- type: Blog
+  url: https://autonomy.com/blog
+- type: TermsOfService
+  url: https://autonomy.com/tos
+- type: PrivacyPolicy
+  url: https://autonomy.com/privacy
+
+apis:
+- name: Autonomy API
+  description: API documentation is provided at the embedded content page, but no machine‑readable contract (OpenAPI, GraphQL, etc.) was found.
+  humanURL: https://autonomy.com/docs/embedded-content
+  baseURL: null
+  aid: autonomy:autonomy-api
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Documentation page is a JavaScript‑rendered single‑page app with no machine‑readable spec.
+  evidence:
+  - url: https://autonomy.com/docs/embedded-content
+    status: 200
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
