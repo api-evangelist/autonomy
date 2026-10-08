@@ -26,3 +26,34 @@ plans:
   price: 600
   description: $3,000 down to start
 docs: https://autonomy.com/tesla/model-3/pricing-comparison
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - subscription
+  units: []
+  plans:
+  - name: Tier 1
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Tier 2
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Tier 3
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Tier 4
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
